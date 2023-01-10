@@ -1,4 +1,17 @@
 
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    background-color: #9BC698;
+}
+
+.icons img {
+    margin: 15px;
+    cursor: pointer;
+
+}
 
 
 
