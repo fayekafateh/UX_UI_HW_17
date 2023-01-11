@@ -1,6 +1,21 @@
+/*navigation*/
+.navigation{
+    display: inline-block;
+    vertical-align: top;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.logo{
+    display: inline-block;
+    width: 23%;
+
+}
 
 .icons{
-    display: grid;
+    display: block;
+    float: right;
+    right: 0px;
     background-color: #9BC698;
     align-content: center;
     margin: 10px;
@@ -15,20 +30,21 @@
 }
 
 .navigation{
-    width: 99%;
+    width: 90%;
     padding:1%;
 }
 
-.backgroungImg{
+/*Hero section*/
+
+.backgroundImg{
     display: inline-block;
     flex-direction: row;
     width: 100%;
 }
 
-.ProfilePicture{
-    background-image: url(../images/Footer/);
-}
 
+
+/*Footer*/
 
 
 
