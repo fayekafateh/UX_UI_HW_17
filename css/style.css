@@ -1,18 +1,28 @@
 body{
     font-family: 'Comfortaa', cursive;
+    width: 100%;
 }
 
 /*navigation*/
 
-.iconsandlogo{
-    display: flex;
-    justify-content: space-between;
+.logo{
+    padding-top: 10px;
+    padding-left: 50px;
 }
 
-.navigation{
-    width: 80%;
+.navlogo{
+    padding-top: unset;
+    transform: scale(.75);
+}
+
+
+ .navigation{
+    width: 100%;
     height: 97px;
-    margin: 1% auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+
 
 }
 
@@ -29,15 +39,132 @@ body{
     border-radius:35px 0px 35px 0px;
     display: flex;
     align-items: center;
-   
+       
 }
+
 .icons img{
     width: 45px;
 }
 
+/*hero section-2*/
+.heroSection{
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    background-color: #cee3cc;
+}
+
+.heroImage{
+    transform: scale(0.9);
+    margin-left: -230px;
+}
+
+.heroContents{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 24pt;
+    color: #763D14;
+
+}
+
+.myTitle{
+    font-size: 16pt;
+    color: #48742C;
+}
+
+.heroPara{
+    font-size: 16pt;
+    color: #763D14;
+}
+
+button{
+    background-color: #FF8B94;
+    color: white;
+    border: 0pt;
+    border-radius:0px 30px 0px 30px;
+    padding: 17px 53px;
+    font-weight: 400;
+    font-size: 14pt;
+    width: 46%;
+}
+
+/*footer2*/
+footer{
+    background-image: url(../images/Footer/Creeper\ Background\ Peach2.png);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.footercontents{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 16pt;
+    color: #48742C;
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footerIcons{
+    display: flex;
+
+}
+
+.icons2{
+    background-color: #763D14;
+    padding:20px;
+    border-radius:60% 0% 60% 0%;
+    display: flex;
+    align-items: center;
+}
+
+.icons2 img{
+    width: 40px;
+}
+
+/*.navIcons{
+    display: flex;
+    align-content: center;
+
+}
+
+.icons {
+    background-color: #9BC698;
+    margin: 10px;
+    padding:15px;
+    border-radius:35px 0px 35px 0px;
+    display: flex;
+    align-items: center;
+   
+}
+.icons img{
+    width: 45px;
+} */
+
 
 /*Hero section*/
-.herobackgroundImg{
+/* .herobackgroundImg{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -48,23 +175,17 @@ body{
 }
 
 .profilePicture{
-    /* display: flex;
-    align-items: center; */
+
     height: 50%;
     width: 75%;
-    /* height: 520px; */
-}
-
-/* .profilePicture img{
-    height: 91%;
-    width: auto;
-
 
 } */
 
 
 
-.heroContents{
+
+
+/* .heroContents{
     display: flex;
     align-items: center;
     position: absolute;
@@ -104,7 +225,7 @@ button{
 
 /*Footer*/
 
-.logo2{
+/* .logo2{
     padding: 40px;
 }
 
@@ -154,7 +275,7 @@ footer{
 
 .icons2 img{
     width: 58px;
-}
+} */
 
 
 
