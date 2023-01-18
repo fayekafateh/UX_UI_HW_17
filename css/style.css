@@ -11,6 +11,14 @@ h1{
     font-size: 20pt;
 }
 
+h5{
+    font-family: 'Cinzel Decorative', cursive;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #763D14;
+}
+
 .titleRunners{
     text-align: center;
     vertical-align: middle;
@@ -151,25 +159,185 @@ h2{
     width: 887px;
     background-color: #9BC698 ;
 }
+/* MY EXPERIENCE */
+#expflex{
+    display: flex;
+    width:40rem;
+}
+
+#expContent{
+    max-width: 205px;
+}
+
+#expNoB{
+    background-color: #FF8B94;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 30px 0px 30px 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+#expNoA{
+    background-color: #FF8B94;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.experienceGridArea{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+/* Experience Grid CSS */
+#experienceGrid{
+    margin: 0 10px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 33% 10%;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-template-areas: 
+    "SmallBusinessOwner Stem"
+    "FreelanceArchitect Stem"
+    "JuniorArchitect Stem"
+    "InternArchitect Stem";
+}
+
+#smallBusinessOwner{
+    grid-area: SmallBusinessOwner;
+    text-align: right;
+    width: 35vh;
+}
+
+#freelanceArchitect{
+    grid-area: FreelanceArchitect;
+    width: 35vh;
+    /* margin-left: 78vh; */
+}
+
+#juniorArchitect{
+    grid-area: JuniorArchitect;
+    text-align: right;
+    width: 35vh;
+}
+
+#internArchitect{
+    grid-area: InternArchitect;
+    width: 35vh;
+    /* margin-left: 78vh;
+    margin-bottom: 30vh; */
+}
+
+#stem{
+    grid-area: Stem;
+
+}
+#stem img{
+    width:63px;
+}
+
+/* MY SKILLS */
+#headline{
+    display: flex;
+    align-items: center;
+}
+
+.skillGridArea img{
+    width: 52px;
+}
+
+.skillList{
+    color: #48742C;
+    background-color: #E0DA8A;
+    border-radius: 30px;
+    width: 35vh;
+    padding: 30px;
+    font-weight: 700;
+}
+
+/* Skills Grid CSS */
+#skillGrid{
+    margin: 0 120px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    "Design Tools Others";
+}
+
+#Design{
+    grid-area: Design;
+    /* justify-content: space-around; */
+}
+#Tools{
+    grid-area: Tools;
+}
+#Others{
+    grid-area: Others;
+}
+
+/* .skillGridArea{
+    align-items: center;
+    display: flex;
+    position: relative;
+} */
+
+
 
 /* ABOUT ME */
-.aboutMeContainer{
+#aboutMeGrid{
     background-color: #cee3cc;
     width: 100%;
-    /* height: 50vh; */
 }
 
-.AMmaincontent{
-    display: flex;
-    /* flex-direction: column; */
-}
-
-.AMmaincontent img{
+#AMprofile img{
     width: 545px;
 }
 
-.AMbottomcontent{
-    display: flex;
+.introduction{
+    color: #763D14;
+}
+
+#AMcontent p{
+    color: #48742C;
+    font-weight: 700;
+}
+
+.AMbutton{
+    width: 55%;
+    margin-left: 45%;
+}
+
+/* About me grid CSS */
+
+#aboutMeGrid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 37% 37%;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    "AMprofile AMcontent";
+}
+
+#AMprofile{
+    grid-area: AMprofile;
+    text-align: center;
+}
+
+#AMcontent{
+    grid-area: AMcontent;
+    padding-left: 20px;
+    align-self: center;
 }
 
 /*FOOTER*/
