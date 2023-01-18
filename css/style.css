@@ -204,13 +204,13 @@ h2{
     margin: 0 10px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 33% 10%;
+    grid-template-columns: 33%;
     grid-template-rows: 20vh 20vh 20vh 20vh;
     grid-template-areas: 
-    "SmallBusinessOwner Stem"
-    "FreelanceArchitect Stem"
-    "JuniorArchitect Stem"
-    "InternArchitect Stem";
+    "SmallBusinessOwner"
+    "FreelanceArchitect"
+    "JuniorArchitect"
+    "InternArchitect";
 }
 
 #smallBusinessOwner{
@@ -239,7 +239,9 @@ h2{
 }
 
 #stem{
-    grid-area: Stem;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
 
 }
 #stem img{
