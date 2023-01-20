@@ -37,7 +37,7 @@ button{
     padding: 17px 53px;
     font-weight: 400;
     font-size: 14pt;
-    width: 46%;
+    width: 284px;
     cursor: pointer;
 }
 
@@ -60,13 +60,14 @@ button{
 }
 
 
- .navigation{
+.navigation{
     width: 100%;
     height: 97px;
     display: flex;
     justify-content: space-between;
     position: fixed;
     margin-top: -6rem;
+    z-index: 2;
 
 
 }
@@ -162,7 +163,7 @@ h2{
 /* MY EXPERIENCE */
 #expflex{
     display: flex;
-    width:40rem;
+    width:60rem;
 }
 
 #expContent{
@@ -216,13 +217,14 @@ h2{
 #smallBusinessOwner{
     grid-area: SmallBusinessOwner;
     text-align: right;
-    width: 35vh;
+    width: 37vw;
+    right: 0.5vw;
     z-index: 1;
 }
 
 #freelanceArchitect{
     grid-area: FreelanceArchitect;
-    width: 35vh;
+    width: 37vw;
     right: -17vw;
     z-index: 1;
 }
@@ -230,16 +232,16 @@ h2{
 #juniorArchitect{
     grid-area: JuniorArchitect;
     text-align: right;
-    width: 35vh;
-    right: 1.5vw;
+    width: 38vw;
+    right: 2vw;
     z-index: 1;
 }
 
 #internArchitect{
     grid-area: InternArchitect;
-    width: 35vh;
+    width: 38vw;
     right: -18vw;
-    bottom: 4vh;
+    bottom: 2vh;
     z-index: 1;
 }
 
@@ -309,6 +311,8 @@ h2{
 
 #AMprofile img{
     width: 545px;
+    align-items: center;
+
 }
 
 .introduction{
@@ -321,16 +325,23 @@ h2{
 }
 
 .AMbutton{
-    width: 55%;
     margin-left: 45%;
 }
 
 /* About me grid CSS */
+.AMGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    display: grid;
+    align-content: end;
+}
 
 #aboutMeGrid{
     display: grid;
     justify-content: center;
-    grid-template-columns: 37% 37%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: max-content;
     grid-template-areas: 
     "AMprofile AMcontent";
@@ -339,12 +350,15 @@ h2{
 #AMprofile{
     grid-area: AMprofile;
     text-align: center;
+    margin: 50px;
 }
 
 #AMcontent{
     grid-area: AMcontent;
-    padding-left: 20px;
+    padding-left: 70px;
+    margin-right: 100px;
     align-self: center;
+    width: 500px;
 }
 
 /* CONTACT */
@@ -353,6 +367,8 @@ h2{
     height: 59px;
     border-radius: 20px;
     border: 0pt;
+    transform: translateY(4rem);
+    padding: 0 1vw;
 }
 
 #email{
@@ -360,6 +376,8 @@ h2{
     height: 59px;
     border-radius: 20px;
     border: 0pt;
+    transform: translateY(4rem);
+    padding: 0 1vw;
 }
 
 #msg{
@@ -367,13 +385,15 @@ h2{
     height: 180px;
     border-radius: 20px;
     border: 0pt;
+    transform: translateY(4rem);
+    padding: 0 1vw;
+    
 }
 
 .contactGridArea2{
     background-color: #E0DA8A;
     width: 100%;
-    height: 30rem;
-    align-items: center;
+    height: 34rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,7 +418,10 @@ h2{
 #contactInput{
     grid-area: contactInput;
     text-align: center;
-    align-items: center;
+}
+
+#contactbutton{
+    transform: translateY(4rem);
 }
 
 /*FOOTER*/
@@ -448,13 +471,35 @@ li{
 
 /*Responsive Web Design*/
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1300px){
+    
+    /* About Me */
     #aboutMeGrid{
-        grid-template-columns: 50%;
+        margin: 0 120px;
+        grid-template-columns: 40%;
         grid-template-rows: 50% 50%;
         grid-template-areas: 
         "AMprofile"
         "AMcontent";
+    }
+
+    #AMcontent{
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width:1200px){
+    /* My Skills */
+    #skillGrid{
+        margin: 0 120px;
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: 40% 40% 20%;
+        grid-template-areas: 
+        "Design"
+        "Tools"
+        "Others";
     }
 }
 
