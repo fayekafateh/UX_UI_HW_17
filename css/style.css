@@ -175,16 +175,24 @@ h2{
     background-color: #9BC698 ; */
 }
 
-.h1gtg{
+.h1gtg, .h1mFerals{
     transform: translateX(470px);
+    /* animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; */
+    
 }
 
 .h1dAssist{
     transform: translateX(-420px);
 }
 
-.h1mFerals{
-    transform: translateX(470px);
+/* Hover Effects */
+
+ .h1mFerals :hover{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 /* MY EXPERIENCE */
@@ -531,9 +539,13 @@ li{
 }
 
 
+/* Portfolio Animation */
 
-
-
+@keyframes slide {
+    from{transform: translate(470px);}
+    to{ transform: translateX(0px);}
+    
+}
 
 
 
