@@ -158,11 +158,14 @@ h2{
 }
 
 .dAssistbox{
+    display: flex;
     transform: translateX(185px);
+    transition: 2s ease;
 }
 
 .mFeralsbox{
     transform: translateX(-130px);
+    transition: 2s ease;
 }
 
 .movingh1{
@@ -212,9 +215,45 @@ h2{
     
 }
 
-.image1{
+.gtgimage1{
+    display: none;
+    height: 430px;
+    z-index: 1;
+    transform:translate(-120px)
+}
+
+.gtgimage2{
+    display: none;
     height: 500px;
     z-index: 1;
+    transform: translateY(40px);
+}
+
+.dAssistimage1{
+    display: none;
+    height: 389px;
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.dAssistimage2{
+    display: none;
+    height: 400px;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 130px;
+    filter: drop-shadow(5px 5px 5px grey);
+
+}
+
+.dAssistimage3{
+    display: none;
+    height: 400px;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: -191px;
+    scale: .945;
 }
 
 /* Hover Effects */
