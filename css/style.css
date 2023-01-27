@@ -187,33 +187,39 @@ h2{
     
 }
 
-.gtgButton{
-    display: none;
-    
-}
 
 .h1dAssist{
     transform: translateX(-420px);
     transition: 2s ease;
 }
 
-/* Hover Effects */
-
- /* .h1mFerals :hover{
-    animation-name: slide;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-} */
-
-.gtgButton, .dAssistButton, .mFeralsButton{
+.gtgButton, .mFeralsButton{
+    display: none;
     width: 210px;
     align-self: center;
-    transform: translateY(80px);
-    /* display: none; */
+    margin-top: 50px;
     z-index: 1;
     transform: translateX(-100px);
-    /* opacity: 0.5; */
 }
+
+.dAssistButton{
+    display: none;
+    width: 210px;
+    align-self: center;
+    margin-top: 50px;
+    z-index: 1;
+    transform: translateX(100px);
+    
+}
+
+.image1{
+    height: 500px;
+    z-index: 1;
+}
+
+/* Hover Effects */
+
+
 
 /* MY EXPERIENCE */
 #expflex{
