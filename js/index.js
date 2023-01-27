@@ -1,8 +1,19 @@
 // Portfolio
-$(".movingGreenbox").hover(function(){
+$(".gtg").hover(function(){
+    $(".gtgbox").css("transform","translateX(100px)")
+    $(".h1gtg").css("transform","translateX(-100px)")
+    $(".gtgButton").fadeIn(3000);
 
-    $(this).css("transform","translateX(20px)")
+})
 
+$(".dAssist").hover(function(){
+    $(".dAssistbox").css("transform","translateX(-100px)")
+    $(".h1dAssist").css("transform","translateX(100px)")
 
+})
+
+$(".mFerals").hover(function(){
+    $(".mFeralsbox").css("transform","translateX(100px)")
+    $(".h1mFerals").css("transform","translateX(-100px)")
 
 })
