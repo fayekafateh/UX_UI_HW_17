@@ -39,6 +39,7 @@ button{
     font-size: 14pt;
     width: 284px;
     cursor: pointer;
+    filter: drop-shadow(0px 3px 2px grey);
 }
 
 /*NAVIGATION*/
@@ -66,7 +67,7 @@ button{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    margin-top: -6rem;
+    margin-top: -5.5rem;
     z-index: 2;
 
 
@@ -85,12 +86,62 @@ button{
     border-radius:35px 0px 35px 0px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 6px 12px rgb(102, 102, 102);
        
 }
 
 .icons img{
     width: 45px;
 }
+
+.icontags{
+    width: 30px;
+    margin-left: -47px;
+    color: #48742C;
+    font-weight: 700;
+}
+
+.icontagstop{
+    display: none;
+    margin-top: 29px;
+}
+
+.icontagsPort{
+    display: none;
+    margin-top: 35px;
+}
+.icontagsexp{
+    display: none;
+    margin-top: 45px;
+}
+
+.icontagsSkl{
+    display: none;
+    margin-top: 37px;
+}
+
+.icontagsabt{
+    display: none;
+    margin-top: 37px;
+}
+
+.icontagscon{
+    display: none;
+    margin-top: 48px;
+}
+
+
+/* Hover Icons */
+
+.icons:hover{
+    scale: 1.15;
+    box-shadow: 0px 0px 6px 8px #F7A2A5;
+}
+
+/* .icontagscon:hover{
+    display: contents;
+} */
 
 /*HERO SECTION*/
 .heroSection{
@@ -164,6 +215,7 @@ h2{
 }
 
 .mFeralsbox{
+    display: flex;
     transform: translateX(-130px);
     transition: 2s ease;
 }
@@ -231,30 +283,57 @@ h2{
 
 .dAssistimage1{
     display: none;
-    height: 389px;
+    height: 450px;
     z-index: 1;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
 .dAssistimage2{
     display: none;
-    height: 400px;
+    height: 450px;
     z-index: 1;
-    margin-top: 150px;
-    margin-left: 130px;
-    filter: drop-shadow(5px 5px 5px grey);
+    margin-top: 80px;
+    margin-left: 70px;
+    filter: drop-shadow(5px 5px 3px grey);
 
 }
 
 .dAssistimage3{
     display: none;
-    height: 400px;
+    height: 450px;
     z-index: 1;
-    margin-top: 150px;
-    margin-left: -191px;
+    margin-top: 80px;
+    margin-left: -215px;
     scale: .945;
 }
+
+.mFeralsimage1{
+    display: none;
+    height: 760px;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -270px;
+}
+
+.mFeralsgif1{
+    display: none;
+    height: 315px;
+    z-index: 1;
+    margin-top: 124px;
+    margin-left: -719px;
+}
+
+.mFeralsgif2{
+    display: none;
+    height: 450px;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 128px;
+}
+
+
+
 
 /* Hover Effects */
 
