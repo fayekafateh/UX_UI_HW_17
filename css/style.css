@@ -4,6 +4,18 @@ body{
     width: 100%;
 }
 
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(31, 31, 31);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #FF8B94;
+}
+
 h1{
     font-family: 'Cinzel Decorative', cursive;
     width: 100%;
@@ -62,8 +74,6 @@ button{
 
 
 .navigation{
-    width: 100%;
-    height: 97px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -478,7 +488,7 @@ h2{
     color: #48742C;
     background-color: #E0DA8A;
     border-radius: 30px;
-    width: 35vh;
+    width: 230px;
     padding: 30px;
     font-weight: 700;
 }
@@ -521,6 +531,7 @@ h2{
 #AMprofile img{
     width: 545px;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 
@@ -567,7 +578,7 @@ h2{
     padding-left: 70px;
     margin-right: 100px;
     align-self: center;
-    width: 500px;
+    width: 610px;
 }
 
 /* CONTACT */
@@ -684,22 +695,50 @@ li{
     
     /* About Me */
     #aboutMeGrid{
-        margin: 0 120px;
-        grid-template-columns: 40%;
-        grid-template-rows: 50% 50%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 80%;
+        grid-template-rows: 30% 70%;
         grid-template-areas: 
         "AMprofile"
         "AMcontent";
     }
 
     #AMcontent{
+        margin-top: 34px;
         padding: 0px;
+        width: 100%;
     }
 
+    #AMprofile img {
+        width: 300px;
+        margin-bottom: 20px;
+
+    }
+
+    #AMprofile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:970px){
     /* My Skills */
+    #skillGrid{
+        margin: 0 120px;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 70% 20%;
+        grid-template-areas: 
+        "Design Tools"
+        "Others Others";
+    }
+}
+
+
+@media only screen and (max-width:760px){
+    
     #skillGrid{
         margin: 0 120px;
         display: grid;
@@ -709,6 +748,51 @@ li{
         "Design"
         "Tools"
         "Others";
+    }
+}
+
+@media only screen and (min-width: 735px) {
+    .navigation{
+        width: 100%;
+        height: 97px;
+    }
+    
+}
+
+@media only screen and (max-width: 735px) {
+    .navigation{
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        background: #F7A2A560;
+        border-radius: 15px 15px 0px 0px;
+        box-shadow: 0px -2px 12px rgb(102, 102, 102);
+
+    }
+    
+    .navlogo{
+        scale: 0.6;
+        padding: 0px 0px 0px 15px;       
+    }
+
+    .icons{
+        scale: 0.4;
+        margin-left: auto;
+        margin: auto;
+    }
+    .icons:hover{
+        scale: 0.5;
+        box-shadow: 0px 0px 6px 8px #F7A2A5;
+    }
+
+    .icontags{
+        display: none;
+    }
+    
+    .navIcons{
+        width: 100%;
     }
 }
 
