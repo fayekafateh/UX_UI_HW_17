@@ -5,7 +5,7 @@ body{
 }
 
 body::-webkit-scrollbar{
-    width: 0.5rem;
+    width: 1rem;
 }
 
 body::-webkit-scrollbar-track{
@@ -174,18 +174,22 @@ button:hover{
 
 a:link{
     text-decoration: none;
+    color: #763D14;
 }
 
 a:visited{
     text-decoration: none;
+    color: #763D14;
 }
 
 a:hover{
     text-decoration: none;
+    color: #FF8B94;
 }
 
 a:active{
     text-decoration: none;
+    color: #763D14;
 }
 
 
@@ -721,6 +725,7 @@ ul{
 li{
     list-style-type: none;
     padding: 10px;
+    
 }
 
 .footerIcons{
@@ -735,10 +740,23 @@ li{
     border-radius:60% 0% 60% 0%;
     display: flex;
     align-items: center;
+    margin: 0px 10px;
 }
 
 .icons2 img{
     width: 40px;
+}
+
+.emailicon:hover{
+    background-color: #FF8B94;
+    scale: 1.2;
+    transition-duration: 300ms;
+}
+
+.Linkedinicon:hover{
+    background-color: #FF8B94;
+    scale: 1.2;
+    transition-duration: 300ms;
 }
 
 /*Responsive Web Design*/

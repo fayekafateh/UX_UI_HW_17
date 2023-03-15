@@ -307,7 +307,7 @@
             </p>
             <p>I have collaborated with teams and individually from start-finish to deliver projects on time and present them to the jurors.</p>
             <p>Thank you for stopping by and getting to know me. Checkout my resume by pressing the button below!</p>
-            <button class="AMbutton">Download Resume</button>
+            <a href="./data/UX _UI_Resume-Fayeka_Fateh.pdf" target="_blank"><button class="AMbutton">Download Resume</button></a>
         </div>
     </section>
 
@@ -321,14 +321,14 @@
             <h2>I'd Love To Hear From You!</h2>
             <p>Reach out for opportunities, collaborations or just a friendly hello!</p>
         </div>
-        <form id="contactInput" class="contactGridArea2">
+        <form onsubmit="sendEmail(); reset(); return false;" id="contactInput" class="contactGridArea2">
             <div>
                 <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Name"><br><br>
                 <label for="email"></label>
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <label for="msg"></label>
-                <input type="text" id="msg" name="msg" placeholder="Message"><br><br>
+                <input type="text" id="msg" name="msg" rows="4" placeholder="Message"><br><br>
             </div>
             <button id="contactbutton">Send</button>
         </form>
@@ -343,14 +343,14 @@
               <ul>
                   <li class="footerTitle">FAYEKA FATEH</li>
                   <li>fayeka0308@gmail.com</li>
-                  <li>Resume</li>
+                  <a href="./data/UX _UI_Resume-Fayeka_Fateh.pdf" target="_blank"><li>Resume</li></a>
               </ul>
           </div>
           
           <div class="footercolumn2">
               <ul>
                   <li class="footerTitle">UX PROJECTS</li>
-                  <li>Got To Go- Public Restroom Finding App</li>
+                  <a href="../UX_UI_HW_20_CaseStudy1/index.html"><li>Got To Go- Public Restroom Finding App</li></a>
                   <li>DisasterAsisstance.gov</li>
                   <li>Metro Ferals</li>
               </ul>
@@ -361,11 +361,11 @@
                 <li class="footerTitle">GET IN TOUCH</li>
               </ul>
               <div class="footerIcons">
-                  <div class="icons2">
+                  <div class="icons2 emailicon">
                     <img src="../UX_UI_HW_17/images/Footer/E-mail Button2.png">
                   </div>
-                  <div class="icons2">
-                    <img src="../UX_UI_HW_17/images/Footer/LinkedIn Button2.png">
+                  <div class="icons2 Linkedinicon">
+                    <a href="https://www.linkedin.com/in/fayeka-fateh-0aa79197/" target="_blank"><img src="../UX_UI_HW_17/images/Footer/LinkedIn Button2.png"></a>
                   </div>
               </div>           
           </div>
@@ -385,6 +385,8 @@
         ScrollReveal().reveal('#AMcontent', { delay: 500 });
     </script>
     
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
   <!-- Bootstrap links -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
@@ -394,6 +396,23 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "fayeka0308@gmail.com",
+                Password : "password",
+                To : 'fayeka0308@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Inquiry",
+                Body : "name: " + document.getElementById("name").value
+                + "<br> email" + document.getElementById("email").value
+                + "<br> msg" + document.getElementById("msg").value
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
 
