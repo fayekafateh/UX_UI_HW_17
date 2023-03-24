@@ -431,6 +431,12 @@ h2{
     padding-top: 5px;
     
 }
+
+#expSection{
+    height: 85vh;
+    margin-top: 20vh;
+}
+
 .experienceGridArea{
     background-position: center;
     background-repeat: no-repeat;
@@ -630,7 +636,7 @@ h2{
     
 }
 
-.contactGridArea2{
+/* .contactGridArea2{
     background-color: #E0DA8A;
     width: 100%;
     height: 34rem;
@@ -638,9 +644,48 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
 
+} */
+
+#contactdets{
+    color: #48742C;
+    font-weight: 700;
+    font-size: 15pt;
+    background-color: #E0DA8A;
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#contactGrid{
+.contactimg{
+    width: 200px;
+    margin: 0rem 1rem;
+}
+
+.LinkedInCont{
+    background-color: #763D14;
+    padding:20px;
+    border-radius:60% 0% 60% 0%;
+    margin: 0rem 5rem;
+    width: 80px;
+    box-shadow: 0px 6px 12px rgb(102, 102, 102);
+}
+
+.LinkedInCont img{
+    width: 40px;
+}
+
+.LinkedInCont:hover{
+    background-color: #FF8B94;
+    scale: 1.2;
+    transition-duration: 300ms;
+}
+
+/* #contactGrid{
     display: grid;
     justify-content: center;
     grid-template-columns: 100%;
@@ -648,7 +693,7 @@ h2{
     grid-template-areas: 
     "contactheadline"
     "contactInput";
-}
+} */
 
 #contactheadline{
     grid-area: contactheadline;
@@ -741,6 +786,7 @@ li{
     display: flex;
     align-items: center;
     margin: 0px 10px;
+    box-shadow: 0px 6px 12px rgb(102, 102, 102);
 }
 
 .icons2 img{

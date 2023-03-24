@@ -149,7 +149,7 @@
     <div id="Experience" class="titleRunners">
         <h1>My Experience</h1>
     </div>
-    <section>
+    <section id="expSection">
         <div id="experienceGrid">
             <div id="smallBusinessOwner" class="experienceGridArea">
                 <div id="expflex">
@@ -316,12 +316,24 @@
     <div id="Contact" class="titleRunners">
         <h1>Contact</h1>
     </div>
-    <section id="contactGrid">
-        <div id="contactheadline" class="contactGridArea1">
+    <section id="contactsection">
+        <div id="contactheadline">
             <h2>I'd Love To Hear From You!</h2>
             <p>Reach out for opportunities, collaborations or just a friendly hello!</p>
         </div>
-        <form onsubmit="sendEmail(); reset(); return false;" id="contactInput" class="contactGridArea2">
+        <div id="contactdets">
+            <div>
+                <img class="contactimg" src="./images/My_Picture_2.png">
+            </div>
+            <div>
+                <p>Fayeka Fateh</p>
+            </div>
+            <div class="LinkedInCont">
+                <a href="https://www.linkedin.com/in/fayeka-fateh-0aa79197/" target="_blank"><img src="./images/Footer/LinkedIn Button2.png"></a>
+            </div>
+        </div>
+        
+        <!-- <form id="contactInput" class="contactGridArea2">
             <div>
                 <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Name"><br><br>
@@ -331,7 +343,7 @@
                 <input type="text" id="msg" name="msg" rows="4" placeholder="Message"><br><br>
             </div>
             <button id="contactbutton">Send</button>
-        </form>
+        </form> -->
     </section>
     <!-- FOOTER SECTION -->
     <footer>
@@ -385,7 +397,7 @@
         ScrollReveal().reveal('#AMcontent', { delay: 500 });
     </script>
     
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 
   <!-- Bootstrap links -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -396,6 +408,10 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    
+    <!-- For messages to be sent from contact section -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script>
         function sendEmail(){
             Email.send({
@@ -412,7 +428,7 @@
             message => alert(message)
             );
         }
-    </script>
+    </script> -->
 </body>
 </html>
 
